@@ -1,0 +1,27 @@
+{
+  "engines": {
+    "node": ">=16.0.0",
+    "npm": ">=7.0.0"
+  },
+  "name": "AquaTic",
+  "scripts": {
+    "build": "npm run build --workspaces --if-present",
+    "prebuild": "npm run prebuild --workspaces --if-present",
+    "pretest": "npm run prebuild --workspaces --if-present",
+    "start": "npm start --workspaces --if-present",
+    "test": "npm test --workspaces --if-present"
+  },
+  "type": "module",
+  "workspaces": [
+    "src/AquaTic_frontend"
+  ],
+  "dependencies": {
+    "@connect2ic/core": "^0.2.0-beta.24",
+    "@connect2ic/react": "^0.2.0-beta.24",
+    "@fortawesome/fontawesome-free": "^6.5.2",
+    "bootstrap": "^5.3.3",
+    "chart.js": "^4.4.3",
+    "react-chartjs-2": "^5.2.0",
+    "react-router-dom": "^6.24.1"
+  }
+}

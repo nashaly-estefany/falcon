@@ -1,0 +1,26 @@
+{
+  "canisters": {
+    "AquaTic_backend": {
+      "main": "src/AquaTic_backend/main.mo",
+      "type": "motoko"
+    },
+    "AquaTic_frontend": {
+      "dependencies": [
+        "AquaTic_backend"
+      ],
+      "source": [
+        "src/AquaTic_frontend/dist"
+      ],
+      "type": "assets",
+      "workspace": "AquaTic_frontend"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
